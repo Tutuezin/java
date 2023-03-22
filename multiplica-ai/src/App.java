@@ -11,8 +11,9 @@ public class App {
         System.out.println("Quantas vezes você deseja multiplicar esse número?");
         int size = scannerSize.nextInt();
 
-        System.out.println("\n" + "Número " + value + " multiplicado " + size + " vezes." + "\n");
-
+        //System.out.println("\n" + "Número " + value + " multiplicado " + size + " vezes." + "\n");
+        System.out.println("\n" + "Tabela de multiplicação de " + value + "\n");
+         
         for (int i = 0; i <= size; i++) {
 
             int result = i * value;
