@@ -10,3 +10,5 @@
 
   Resultado: [Morango, Acerola]
   ```
+
+  :)
