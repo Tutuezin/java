@@ -9,7 +9,7 @@ public class App {
         List<String> duplicatedFruits = new ArrayList<>();
 
         for (int i = 0; i < ArrFruits1.length; i++) {
-            for (int j = 0; j < ArrFruits1.length; j++) {
+            for (int j = 0; j < ArrFruits2.length; j++) {
                 if (ArrFruits1[i].equals(ArrFruits2[j])) {
                     duplicatedFruits.add(ArrFruits1[i]);
                 }
