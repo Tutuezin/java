@@ -20,9 +20,25 @@ public class Holidays implements IHoliday {
   }
 
   public void getArrHolidays() {
+    System.out.println("\nLista de feriados no ano: ");
+
     for (int i = 0; i < arrHolidays.size(); i++) {
       System.out.println(arrHolidays.get(i).getDate() + " => " + arrHolidays.get(i).getName());
     }
+  }
+
+  public String checkHoliday(String date) {
+    String isHoliday = "\nO dia " + date + " não é um feriado.";
+
+    for (int i = 0; i < arrHolidays.size(); i++) {
+      if (arrHolidays.get(i).getDate().equals(date)) {
+        isHoliday = "\nO dia " + date + " é feriado de " + arrHolidays.get(i).getName();
+        break;
+      }
+    }
+
+    return isHoliday;
+
   }
 
 }
